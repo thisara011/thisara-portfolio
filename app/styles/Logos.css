@@ -1,0 +1,109 @@
+.logos-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(10, 25, 47, 0.95);
+}
+
+.logo-card {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px rgba(100, 255, 218, 0.15);
+    border-color: rgba(100, 255, 218, 0.3);
+}
+
+.logo-container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.logo-container img[alt="Microsoft Learn"] {
+    width: 90% !important;
+    height: 90% !important;
+}
+
+.logo-container img[alt="IEEE NIBM"] {
+    width: 95% !important;
+    height: 95% !important;
+}
+
+.logo-container img[alt="NIBM Computing"],
+.logo-container img[alt="Computer Society of Sri Lanka"],
+.logo-container img[alt="STEMup"],
+.logo-container img[alt="Postman"] {
+    width: 85% !important;
+    height: 85% !important;
+}
+
+.logo-container img[alt="IROBEX"] {
+    width: 80% !important;
+    height: 80% !important;
+}
+
+.logo-title {
+    color: #64ffda;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.logo-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .logos-section {
+        gap: 1rem;
+    }
+
+    .logo-card {
+        width: 150px;
+        height: 180px;
+        padding: 0.75rem;
+    }
+
+    .logo-container {
+        width: 70px;
+        height: 70px;
+        padding: 0.5rem;
+    }
+
+    .logo-title {
+        font-size: 0.8rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.7rem;
+    }
+}
